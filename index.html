@@ -1,63 +1,272 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veteran's Day Mailer</title>
     <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Roboto+Condensed:wght@300&display=swap'); */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            /* font-family: 'Mukta', sans-serif; */
+            font-family: 'Roboto Condensed', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            font-weight: 700;
+        }
+
+        .hed-logo {
+            display: block;
+            /* background-color: #ebeff5; */
+            padding: 15px 0;
+        }
+
+        .head {
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .head-1 {
+            margin: 0 auto;
+            padding: 0px;
             text-align: center;
         }
 
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        .head-1-a {
+            position: relative;
         }
 
-        h1 {
+        .head-1-a>img {
+            max-width: 100%;
+            height: auto;
+            /* border-radius: 5px; */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .head-1-a>p {
+            margin: 10px 0;
+            font-size: 25px;
+            font-weight: 700;
+            position: absolute;
+            top: 75px;
+            left: 0;
+            right: 0;
+            color: #14375b;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .head-1-b {
+            background-image: url('imageedit_2_5484014103.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 60% 50%;
+        }
+
+        .head-1-b-quote1 {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .head-1-b-quote1>p {
+            font-style: italic;
+            font-size: 16px;
             color: #1c2c60;
         }
 
-        p {
-            font-size: 16px;
-            line-height: 1.6;
+        .head-1-b-quote2 {
+            margin: 20px auto;
+            width: 90%;
         }
 
-        .button {
-            display: inline-block;
-            background-color: #1c2c60;
-            color: #ffffff;
+        .head-1-b-quote2>.para1 {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #1c2c60;
+        }
+
+        .head-1-b-quote2>.para2 {
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+            line-height: 22px;
+            letter-spacing: 1px;
+        }
+
+        .arrow-btm {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0;
+            color: #14365b;
+        }
+
+        .arrow-txt {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 700;
+            color: #14365b;
+        }
+        .para1-website{
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+            font-size: 16px;
             padding: 10px 20px;
+            text-align: center;
+            background-color: #eee;
+            font-weight: 700;
             border-radius: 5px;
+        }
+
+
+        .SEO_Banner {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            font-size: 16px;
+            background-color: #14365b;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            width: 580px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .footer table {
+            width: 100%;
+        }
+
+        .footer td {
+            text-align: left;
+            padding-left: 10px;
+            color: #fff;
+        }
+
+        .footer img {
+            padding-right: 10px;
+            vertical-align: -webkit-baseline-middle;
+        }
+
+        .social-icons {
+            padding-left: 10px;
+        }
+
+        .social-icons a {
             text-decoration: none;
         }
+
+        .btn-styling {
+            text-decoration: none;
+            color: #fff;
+            background-color: #1c2c60;
+            font-size: 16px;
+            text-transform: uppercase;
+            border-radius: 25px;
+            padding: 10px 20px;
+            display: inline-block;
+        }
     </style>
+    <script src="https://kit.fontawesome.com/935793f8de.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Honoring Our Veterans on Veterans Day</h1>
-        <p>As Veterans Day approaches, we want to take a moment to express our heartfelt gratitude to all the brave men
-            and women who have served in the armed forces. This day is a time to honor and remember the sacrifices made
-            by our veterans, and to show our appreciation for their dedication to our nation.</p>
-        <p>At [Your Company Name], we believe that it's our duty to support and celebrate our veterans. To mark this
-            important occasion, we are extending our gratitude by offering a special Veterans Day promotion.</p>
-        <p>From [Start Date] to [End Date], all veterans and active-duty military personnel can enjoy [Discount
-            Percentage]% off on [Products/Services] at [Your Company Name]. It's a small token of our appreciation for
-            your service to our country.</p>
-        <p>We invite all veterans to visit our [Store Location/Website] during this period and take advantage of this
-            exclusive offer. Please present your military ID or proof of service to redeem this discount.</p>
-        <p>On Veterans Day, we also encourage our community to take a moment to thank a veteran, attend local events, or
-            get involved in initiatives that support veterans. Together, we can make a meaningful difference in the
-            lives of those who have sacrificed so much for our freedom.</p>
-        <p>We would like to extend our warmest wishes to all veterans on this special day. Thank you for your service,
-            your bravery, and your dedication to our nation.</p>
-        <a class="button" href="[Your Website URL]">Learn More</a>
+    <div class="head">
+        <div class="head-1">
+            <div class="hed-logo">
+                <img src="https://cdn-ecmoa.nitrocdn.com/xyaZEMYjFVtCgbgTdMFJVNRTxGrvjJRS/assets/images/optimized/rev-542b84a/www.digitaldynamicswsi.com/wp-content/uploads/2020/10/Global-WSI-logo.png"
+                    alt="Logo">
+            </div>
+            <div class="head-1-a">
+                <img src="banner.png" alt="Columbus Day Image">
+                <p>
+                    Let's Honor Our Heroes This Veteran's Day
+                </p>
+            </div>
+            <div class="head-1-b">
+                <div class="head-1-b-quote1">
+                    <p>"Our nation owes a debt to its fallen heroes that we can never fully repay. But we can honor
+                        their sacrifice, and we must."</p>
+                    <p style="text-align: right;">~ Barack Obama</p>
+                </div>
+                <div class="head-1-b-quote2">
+
+                    <p class="para1">"Let’s honor our veterans this Veterans Day and remember their sacrifice for the
+                        lives of our country and people."</p>
+
+                    <p class="para2">But there should be no sacrifice or compromise on your business goals. Stay focused
+                        towards your goals and objectives by ensuring that your website captures visibility and
+                        engagement on search engines. Partner with a trusted Digital Marketing Agency that will help you
+                        grow your business on the Internet.</p>
+                        <p class="para1-website"><a href="https://www.digitaldynamicswsi.com"
+                                style="text-decoration: none; color: inherit;">DigitalDynamicsWSI.com</a> can help you surpass
+                            your goals.</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://previews.123rf.com/images/varijanta/varijanta1601/varijanta160100031/51306190-thin-line-flat-design-banner-of-search-engine-optimization-modern-vector-illustration-concept-of.jpg"
+                    alt="SEO Banner" class="SEO_Banner">
+            </div>
+            <div style="margin: 20px 0; " align="center">
+                <p>
+                    Here’s <a href="https://www.digitaldynamicswsi.com/how-to-choose-the-right-digital-marketing-agency/"
+                        style="font-weight: 700;display: inline-block; color: #14365b; text-decoration: none;" target="_blank">how
+                        to hire
+                        the right digital marketing agency for your business</a>.</p>
+                <p>If you already have a digital marketing strategy in place, in-house, try <a
+                        href="https://www.digitaldynamicswsi.com/how-improve-google-shopping-ads/"
+                        style="display: inline-block; color: #14365b; text-decoration: none;" target="_blank">improving
+                        your Google Shopping Ads</a> to see your sales skyrocket.</p>
+                        
+            </div>
+            <div style="text-align: center; margin: 30px 0;">
+                <p class="arrow-txt">Connect with our experts now for a FREE DEMO and QUOTE</p>
+                <p class="arrow-btm">&#x21E9;</p>
+                <p style="margin: 0;"><a href="https://www.digitaldynamicswsi.com/contact-us/" class="btn-styling"
+                        target="_blank">Click</a></p>
+            </div>
+        </div>
+        <div class="footer">
+            <table cellpadding="0" cellspacing="0" border="0" align="center">
+                <tr>
+                    <td style="vertical-align: middle;">
+                        <img src="https://www.digitaldynamicswsi.com/wp-content/uploads/2021/11/call-icon.png"
+                            alt="800.571.9272">
+                        <span>800.571.9272</span>
+                    </td>
+                    <td colspan="2" rowspan="2" align="right">
+                        <img src="https://www.digitaldynamicswsi.com/wp-content/uploads/2021/11/gdpr-ready.png"
+                            alt="GDPR Ready" width="80">
+                        <img src="https://www.digitaldynamicswsi.com/wp-content/uploads/2020/10/awards.webp"
+                            alt="Awards">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="social-icons">
+                        <a href="https://www.facebook.com/DigitalDynamicsWSI"><img
+                                src="https://www.digitaldynamicswsi.com/wp-content/themes/digitaldynamicswsi/assets/images/facebook.png"
+                                width="20"></a>
+                        <a href="https://g.page/r/CarMpoFZRWUjEAE"><img
+                                src="https://www.digitaldynamicswsi.com/wp-content/themes/digitaldynamicswsi/assets/images/gmb.png"
+                                width="20"></a>
+                        <a href="https://twitter.com/dynamicswsi"><img
+                                src="https://www.digitaldynamicswsi.com/wp-content/themes/digitaldynamicswsi/assets/images/twitter.png"
+                                width="20"></a>
+                        <a href="https://www.youtube.com/channel/UCkTXWFiX14ZBGpgR6psBtSw/videos/"><img
+                                src="https://www.digitaldynamicswsi.com/wp-content/themes/digitaldynamicswsi/assets/images/youtube.png"
+                                width="20"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
-
 </html>
